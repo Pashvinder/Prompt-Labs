@@ -1,6 +1,9 @@
 body {
-  background-color: #0c101c;
-  font-family: Calibri, sans-serif;
+  /* Define the colors and direction */
+  background: linear-gradient(180deg, #0c101c 0%, #12192b 100%);
+  
+  /* Ensure the background covers the whole screen */
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -878,9 +881,10 @@ h1 {
 }
 
 .box {
-  width: 200px;
-  height: 100px;
-  background-color: lightblue;
+  width: 90%;
+  height: 25em;
+  border-radius: 1em;
+  background-color: white;
   padding: 10px;
   margin: 10px;
 }
