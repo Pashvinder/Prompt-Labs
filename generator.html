@@ -66,10 +66,14 @@ placeholder="Describe what you want the AI to do..."></textarea>
 
 <p>Prompt Type</p>
 
-<select>
-<option>Creative Writing</option>
-<option>Blog Writing</option>
-<option>Marketing</option>
+<select id="promptType">
+  <option>Writing</option>
+  <option>Marketing</option>
+  <option>Education</option>
+  <option>Technology</option>
+  <option>Productivity</option>
+  <option>Creative</option>
+  <option>Business</option>
 </select>
 
 </div>
@@ -79,10 +83,12 @@ placeholder="Describe what you want the AI to do..."></textarea>
 
 <p>Tone</p>
 
-<select>
-<option>Professional</option>
-<option>Friendly</option>
-<option>Casual</option>
+<select id="tone">
+  <option>Professional</option>
+  <option>Friendly</option>
+  <option>Casual</option>
+  <option>Persuasive</option>
+  <option>Humorous</option>
 </select>
 
 </div>
@@ -97,7 +103,7 @@ placeholder="Describe what you want the AI to do..."></textarea>
 
 <p>Detail Level</p>
 
-<select>
+<select id="detailLevel">
 <option>Moderate</option>
 <option>Short</option>
 <option>Detailed</option>
@@ -110,10 +116,17 @@ placeholder="Describe what you want the AI to do..."></textarea>
 
 <p>Target AI</p>
 
-<select>
-<option>ChatGPT</option>
-<option>Gemini</option>
-<option>Midjourney</option>
+<select id="targetAI">
+  <option>ChatGPT</option>
+  <option>Gemini</option>
+  <option>Midjourney</option>
+  <option>Claude</option>
+  <option>Copilot</option>
+  <option>Perplexity</option>
+  <option>Stable Diffusion</option>
+  <option>DALL·E</option>
+  <option>Runway ML</option>
+  <option>Poe</option>
 </select>
 
 </div>
@@ -121,9 +134,7 @@ placeholder="Describe what you want the AI to do..."></textarea>
 </div>
 
 
-<button id="generate_btn">
-Generate Prompt
-</button>
+<button id="generate_btn">Generate Prompt</button>
 
 </div>
 
@@ -223,5 +234,6 @@ Built for creators, developers, and AI explorers.
 
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
