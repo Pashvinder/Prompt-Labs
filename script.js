@@ -1,4 +1,4 @@
-
+// LOGIN PAGE
 const form = document.getElementById("loginForm");
 
 const username = document.getElementById("username");
@@ -31,3 +31,6 @@ form.addEventListener("submit", function(e) {
     window.location.href = "index.html";
   }
 });
+
+
+// PROMPT GENERATOR

@@ -1,5 +1,6 @@
 body {
-background: linear-gradient(180deg, #0c101c 0%, #12192b 100%);
+  background: linear-gradient(180deg, #0c101c 0%, #12192b 100%);
+  font-family: Arial, sans-serif;
 }
 
 .navbar {
@@ -867,11 +868,7 @@ background: linear-gradient(180deg, #0c101c 0%, #12192b 100%);
   color: #7488a1;
   margin-top: 0.5rem;
 }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #dfe9f3, #ffffff);
-}
+
 
 /* main container */
 .login-main {
@@ -899,49 +896,9 @@ body {
 }
 
 
+
+
 /* Login Page */
-
-
-.navbar {
-  list-style: none;
-  font-size: 1.15rem;
-  padding-top: 1rem;
-  padding-right: 3rem;
-  display: flex;
-  justify-content: flex-end;
-  position: sticky;
-  top: 0;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
-  border-radius: 1rem;
-
-}
-
-.navbar li {
-  margin: 0 5px;
-  margin-bottom: 0.3rem;
-}
-
-.navbar li a {
-  color: #798091;
-  text-decoration: none;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  padding-top: 0.50rem;
-  padding-bottom: 0.50rem;
-  border-radius: 8px;
-  transition: 0.30s ease-in-out;
-}
-
-.navbar li a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: white;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
 
 
 #login_head {
@@ -1048,8 +1005,8 @@ body {
   width: 450px;
 }
 
-.login-image img {
-  width: 100%;
+.login-image video {
+  width: 140%;
   border-radius: 1.5rem;
 }
 
@@ -1121,27 +1078,4 @@ body {
   text-shadow: 0 0 10px #1bd4e6;
 }
 
-.footer-bottom {
-  border-top: 1px solid #1c2433;
-  margin-top: 50px;
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  color: #9aa4b2;
-  font-size: 14px;
-}
 
-
-@media (max-width: 900px) {
-  .login-container {
-    flex-direction: column;
-  }
-
-  .login-image {
-    display: none;
-  }
-
-  .login-card {
-    width: 90%;
-  }
-}
