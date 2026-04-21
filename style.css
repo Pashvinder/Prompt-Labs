@@ -746,6 +746,9 @@ body {
   padding: 10px;
   color: white;
 }
+.option_box select:hover{
+  
+}
 
 #generate_btn {
   width: 100%;
