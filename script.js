@@ -1,4 +1,4 @@
-const API_KEY = "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";
+// const API_KEY = "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";
 
 // LOGIN PAGE 
 const form = document.getElementById("loginForm");
