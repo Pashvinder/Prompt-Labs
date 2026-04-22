@@ -1,9 +1,4 @@
-// const API_KEY = "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";
-
-require('dotenv').config();
-const API_Key=process.env.Groq_Key
-
-
+const API_KEY = "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";
 
 // LOGIN PAGE 
 const form = document.getElementById("loginForm");
