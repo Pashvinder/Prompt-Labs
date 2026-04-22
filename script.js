@@ -4,8 +4,8 @@ const API_KEY = "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";
 const form = document.getElementById("loginForm");
 
 if (form) {
-  const username  = document.getElementById("username");
-  const password  = document.getElementById("password");
+  const username = document.getElementById("username");
+  const password = document.getElementById("password");
   const userError = document.getElementById("userError");
   const passError = document.getElementById("passError");
 
@@ -45,10 +45,10 @@ if (generateBtn) {
 
     const promptIdea = document.getElementById("promptInput").value;
     const promptType = document.getElementById("promptType").value;
-    const tone       = document.getElementById("tone").value;
-    const detail     = document.getElementById("detailLevel").value;
-    const ai         = document.getElementById("targetAI").value;
-    const outputBox  = document.getElementById("outputPrompt");
+    const tone = document.getElementById("tone").value;
+    const detail = document.getElementById("detailLevel").value;
+    const ai = document.getElementById("targetAI").value;
+    const outputBox = document.getElementById("outputPrompt");
 
     // Stop if input is empty
     if (!promptIdea.trim()) {
@@ -73,7 +73,11 @@ if (generateBtn) {
           messages: [
             {
               role: "user",
-              content: `You are an expert prompt engineer.
+              content: `You are an expert prompt engineer with deep expertise in crafting clear, effective, and optimized prompts for AI systems.
+You specialize in transforming vague or incomplete instructions into precise, high-performing prompts.
+You understand context, intent, and desired outputs, ensuring maximum relevance and accuracy in responses.
+You apply best practices in prompt structure, including role definition, constraints, and output formatting.
+You continuously refine prompts to improve performance, creativity, and reliability across different use cases.
 Create a ${detail} ${promptType} prompt for ${ai}.
 Tone: ${tone}.
 User's idea: "${promptIdea}"
@@ -97,3 +101,20 @@ Return ONLY the final enhanced prompt. No explanation, no intro, no extra text.`
 
   });
 }
+
+
+function copyPrompt(){
+
+  navigator.clipboard.writeText(outputBox.innerText);
+}
+
+
+
+//Templates
+document.querySelectorAll(".copy").forEach(function(btn){
+  btn.onclick = function(){
+    navigator.clipboard.writeText(
+      btn.parentElement.querySelector("p").innerText
+    );
+  };
+});

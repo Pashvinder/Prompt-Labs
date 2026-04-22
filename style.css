@@ -522,16 +522,19 @@ body {
   color: #6A7B95;
 }
 
-#copy {
+.copy {
   font-size: 1.3rem;
   color: #159EB3;
   background-color: #0D2432;
   border-radius: 1rem;
   padding: 2px;
+  transition: 0.25s ease-in-out;
+    cursor: pointer;
 
 }
 
-#copy:hover {
+
+.copy:hover {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.082);
 }
 
@@ -746,9 +749,8 @@ body {
   padding: 10px;
   color: white;
 }
-.option_box select:hover{
-  
-}
+
+.option_box select:hover {}
 
 #generate_btn {
   width: 100%;
@@ -760,6 +762,8 @@ body {
   color: #0C101C;
   font-size: 1rem;
   transition: 0.25s ease-in-out;
+  cursor: url('path-to-your-image.png'), auto;
+
 }
 
 #generate_btn:hover {
@@ -769,7 +773,7 @@ body {
 
 .generator_result {
   width: 420px;
-  height: 300px;
+  height: 450px;
   border: 1px solid #1b2334;
   border-radius: 1rem;
   background: #0D111F;
@@ -783,7 +787,7 @@ body {
 
 .placeholder {
   color: #5C6C85;
-  margin-top: 100px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -889,7 +893,7 @@ body {
   background: white;
   border-radius: 1em;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* LEFT SIDE */
@@ -1081,4 +1085,14 @@ body {
   text-shadow: 0 0 10px #1bd4e6;
 }
 
+#copy_btn{
 
+  background: transparent;
+      border: 1px solid #1b2334;
+      color: #5C6C85;
+      padding: 5px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: 0.2s ease-in-out;
+}
