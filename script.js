@@ -111,10 +111,17 @@ function copyPrompt(){
 
 
 //Templates
-document.querySelectorAll(".copy").forEach(function(btn){
-  btn.onclick = function(){
+
+document.querySelectorAll(".copy").forEach(function(btn) {
+  btn.onclick = function() {
     navigator.clipboard.writeText(
       btn.parentElement.querySelector("p").innerText
     );
+
+    btn.innerText = "Copied!";
+
+    setTimeout(function() {
+      btn.innerText = "Copy";
+    }, 2000);
   };
 });
