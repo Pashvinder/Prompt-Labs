@@ -20,9 +20,7 @@
 
 <body>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 
   <!-- NAVBAR -->
@@ -78,7 +76,7 @@
             </select>
           </div>
 
-          <!-- Tone + Language -->
+          <!-- Tone dropdown -->
           <div class="generator_options">
             <div class="option_box">
               <p>Tone</p>
@@ -88,38 +86,6 @@
                 <option>Simple</option>
                 <option>Detailed</option>
                 <option>Empathetic</option>
-              </select>
-            </div>
-            <div class="option_box">
-              <p>Language</p>
-              <select id="actLanguage">
-                <option>English</option>
-                <option>Hindi</option>
-                <option>Hinglish</option>
-                <option>Punjabi</option>
-                <option>Spanish</option>
-                <option>French</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Response Length + Age Group -->
-          <div class="generator_options">
-            <div class="option_box">
-              <p>Response Length</p>
-              <select id="actLength">
-                <option>Brief</option>
-                <option>Moderate</option>
-                <option>Detailed</option>
-              </select>
-            </div>
-            <div class="option_box">
-              <p>Age Group</p>
-              <select id="actAge">
-                <option>Teen (13-17)</option>
-                <option>Young Adult (18-30)</option>
-                <option>Adult (31-50)</option>
-                <option>Senior (51+)</option>
               </select>
             </div>
           </div>
@@ -137,7 +103,6 @@
 
 
         <!-- RIGHT: output -->
-        <!-- actOutput is a DIV (not p) — fixes the grey block bug -->
         <div class="act_result">
 
           <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -145,9 +110,9 @@
             <button id="actCopyBtn" onclick="copyActOutput()">Copy</button>
           </div>
 
-          <div id="actOutput" class="placeholder">
+          <p id="actOutput" class="placeholder">
             Your expert advice will appear here.
-          </div>
+          </p>
 
         </div>
 

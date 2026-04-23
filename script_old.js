@@ -184,6 +184,8 @@ Return ONLY the advice. No extra text or intro.`
 
   });
 }
+
+
 function copyActOutput() {
   const actOutput = document.getElementById("actOutput");
   navigator.clipboard.writeText(actOutput.innerText);
