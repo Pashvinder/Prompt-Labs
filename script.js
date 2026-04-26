@@ -104,7 +104,7 @@ Return ONLY the final enhanced prompt. No explanation, no intro, no extra text.`
 
 
 function copyPrompt(){
-
+  const outputBox = document.getElementById("outputPrompt");
   navigator.clipboard.writeText(outputBox.innerText);
 }
 
@@ -126,12 +126,9 @@ document.querySelectorAll(".copy").forEach(function(btn) {
   };
 });
 
-// ============================================================
-// ACT AS A PAGE — DOM Day 1 & Day 2 Topics Covered
-// ============================================================
 
 
-// --- GETTING ELEMENTS (Day 1) ---
+
 
 // 1. Getting element by ID
 const actBtn     = document.getElementById("act_btn");
@@ -324,13 +321,30 @@ function copyActOutput() {
   const actOutput  = document.getElementById("actOutput");
   const actCopyBtn = document.getElementById("actCopyBtn");
 
-  navigator.clipboard.writeText(actOutput.innerText);
+  const text = actOutput.innerText;
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).catch(function () {
+      fallbackCopy(text);
+    });
+  } else {
+    fallbackCopy(text);
+  }
 
   actCopyBtn.textContent = "Copied!";
 
   setTimeout(function () {
     actCopyBtn.textContent = "Copy";
   }, 2000);
+}
+
+function fallbackCopy(text) {
+  const temp = document.createElement("textarea");
+  temp.value = text;
+  document.body.appendChild(temp);
+  temp.select();
+  document.execCommand("copy");
+  document.body.removeChild(temp);
 }
 
 

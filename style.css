@@ -3,6 +3,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.logo-img{
+  height: 50px;
+}
+
 .navbar {
   list-style: none;
   font-size: 1.15rem;
@@ -12,9 +16,9 @@ body {
   justify-content: flex-end;
   position: sticky;
   top: 0;
-  margin-left: 0.5rem;
+  /* margin-left: rem; */
   margin-right: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: -0.5rem;
   border-radius: 1rem;
 
 }
@@ -27,8 +31,8 @@ body {
 .navbar li a {
   color: #798091;
   text-decoration: none;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 0.7rem;
+  /* padding-left: 1rem; */
   padding-top: 0.50rem;
   padding-bottom: 0.50rem;
   border-radius: 8px;
@@ -107,6 +111,7 @@ body {
 }
 
 .webdash {
+  opacity: 70%;
   margin-top: 3rem;
   background-color: #0C111E;
   width: 90%;
@@ -122,6 +127,8 @@ body {
 }
 
 .webdash:hover {
+    opacity: 100%;
+
   box-shadow: 0px 0px 200px #19bdd349;
 }
 
@@ -143,13 +150,13 @@ body {
 
 .gradient1 {
 
-  background-image: linear-gradient(to bottom, #0C101C, #19bdd310);
+  background-image: linear-gradient(to bottom, #0D111E, #19bdd310);
 
 }
 
 .gradient {
   height: 200px;
-  background-image: linear-gradient(to top, #0C101C, #19bdd310);
+  background-image: linear-gradient(to top, #0E1321, #19bdd310);
 
 }
 
@@ -305,7 +312,7 @@ body {
   text-align: center;
   width: 15rem;
   margin: 2rem 2rem 2rem 10rem;
-  border: 1px solid #19BDD3;
+  border: 1px solid #19bdd35f;
   border-radius: 1.2rem;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -318,6 +325,8 @@ body {
   text-align: center;
   width: 15rem;
   margin: 2rem;
+  border: 1px solid #19bdd35f;
+  border-radius: 1.2rem;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -329,7 +338,9 @@ body {
   text-align: center;
   width: 15rem;
   margin: 2rem;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #19bdd35f;
+  border-radius: 1.2rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .step3:hover {
@@ -396,20 +407,27 @@ body {
   background-color: #0D111F;
   border: none;
   margin-bottom: 1rem;
+  
 }
 
 .faq-btn {
   background-color: #0D111F;
+  border-radius: 1rem;
   color: white;
+    transition: 0.25s ease-in-out;
+
+  
+  
 }
 
 .faq-btn:hover {
-  color: #19BDD3;
+  color: white;
+  background-color:#19bdd3b1 ;
 }
 
 .accordion-button:not(.collapsed) {
   background-color: #0D111F;
-  color: #19BDD3;
+  color: #19BDD3
 }
 
 .accordion-body {
