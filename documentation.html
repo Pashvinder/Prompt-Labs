@@ -2,19 +2,15 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Contact Us</title>
-
+    <title>Documentation | PromptLabs</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
-
 </head>
-
 
 <body>
 
@@ -24,88 +20,98 @@
         <nav>
             <ul class="navbar">
 
-                <a href="index.html" class="navbar-logo" style="margin-right: 54rem;">
+                <a href="index.html" class="navbar-logo" style="margin-right: 70rem;">
                     <img src="assets/logo.png" alt="Logo" class="logo-img">
                 </a>
+
                 <li><a href="index.html"> Home</a></li>
                 <li><a href="generator.html"> Generator</a></li>
                 <li><a href="actas.html"> Act as</a></li>
                 <li><a href="template.html"> Templates</a></li>
                 <li><a href="about.html"> About</a></li>
-                <li><a href="contact.html" style="background-color: #163642; color:#2997a5;"  > Contact</a></li>
-
-                <li class="profile-dropdown">
-                    <div class="profile-icon" onclick="toggleProfileDropdown()">
-                        <img src="assets/profile@3x.png" alt="Profile" class="profile-img">
-                    </div>
-                    <div class="dropdown-menu" id="profileDropdown">
-                        <a href="signin.html" class="dropdown-item"><i class="fas fa-users"></i> Switch Accounts</a>
-                        <a href="#" onclick="logout(); return false;" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
-                    </div>
-                </li>
+                <li><a href="contact.html"> Contact</a></li>
             </ul>
         </nav>
 
         <center>
-            <h1 id="about_head">Contact <span style="color:#19BDD3;">Us</span>
+            <h1 id="about_head">
+                <span style="color:#19BDD3;">Documentation</span>
             </h1>
+            <p id="about_text">
+                Learn how to use PromptLabs effectively with our comprehensive guides and tutorials.
+            </p>
         </center>
 
+        <div class="about_section">
 
-        <div class="team_section">
-
-            <div class="team_card">
-
-                <div class="contact1">
-                    <h3>Pashvinder</h3>
-
-                    <p class="role">Developer</p>
-
-                    <p class="roll">
-                        Roll Number: 2510992921
-                    </p>
-
-                    <!-- <a href="" id="link">linkedin</a> -->
-                </div>
-            </div>
-
-            <div class="team_card">
-
-                <h3>Lukshya Kohli</h3>
-
-                <p class="role">Developer</p>
-
-                <p class="roll">
-                    Roll Number: 2510992844
+            <div class="about_card">
+                <h2>Getting Started</h2>
+                <p>
+                    New to PromptLabs? Start here to learn the basics of prompt engineering and how to use our platform.
+                    Discover the fundamentals of crafting effective prompts for AI models.
                 </p>
-
             </div>
 
-
-            <div class="team_card">
-
-                <h3>Kartavya</h3>
-
-                <p class="role">Developer</p>
-
-                <p class="roll">
-                    Roll Number: 2510992732
+            <div class="about_card">
+                <h2>Prompt Generator</h2>
+                <p>
+                    Learn how to use the Prompt Generator feature to create optimized prompts for ChatGPT, Gemini,
+                    Midjourney, and other AI tools with just a few clicks.
                 </p>
-
             </div>
 
+            <div class="about_card">
+                <h2>Act As Feature</h2>
+                <p>
+                    Discover how to use the "Act As" feature to get expert advice from AI personas like doctors,
+                    lawyers, engineers, and more.
+                </p>
+            </div>
 
+            <div class="about_card">
+                <h2>Template Library</h2>
+                <p>
+                    Browse our collection of pre-built templates for various use cases including writing, business,
+                    education, and creative projects.
+                </p>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <center>
+            <h2 id="team_head" style="font-size: 2rem;">
+                <span style="color:#19BDD3;">API</span> Reference
+            </h2>
+        </center>
+
+        <div class="about_section">
+            <div class="about_card" style="width: 100%;">
+                <h2>Using the Groq API</h2>
+                <p>
+                    PromptLabs uses the Groq API for fast AI inference. Our platform connects to Llama models to
+                    generate high-quality prompts and responses.
+                    The API key is securely managed within the application.
+                </p>
+                <br>
+                <p style="color: #19BDD3;">Endpoint:</p>
+                <code style="background: #0b0f1a; padding: 10px; border-radius: 8px; display: block; margin: 10px 0;">
+                    https://api.groq.com/openai/v1/chat/completions
+                </code>
+                <br>
+                <p style="color: #19BDD3;">Model:</p>
+                <code style="background: #0b0f1a; padding: 10px; border-radius: 8px; display: block; margin: 10px 0;">
+                    llama-3.3-70b-versatile
+                </code>
+            </div>
         </div>
 
     </div>
 
-    <div class="blank" style="height:100px ;"></div>
     <br><br>
 
-
-
     <!-- FOOTER -->
-
     <footer class="footer">
 
         <div class="footer-container">
@@ -124,24 +130,16 @@
                 </div>
             </div>
 
-
             <div class="footer-col">
-
                 <h3>Product</h3>
-
                 <ul>
                     <li><a href="generator.html">Prompt Generator</a></li>
                     <li><a href="template.html">Prompt Templates</a></li>
-
                 </ul>
-
             </div>
 
-
             <div class="footer-col">
-
                 <h3>Resources</h3>
-
                 <ul>
                     <li><a href="documentation.html">Documentation</a></li>
                     <li><a href="guide.html">Prompt Guide</a></li>
@@ -149,34 +147,23 @@
                     <li><a href="tutorial.html">Tutorials</a></li>
                     <li><a href="api.html">API</a></li>
                 </ul>
-
             </div>
 
-
             <div class="footer-col">
-
                 <h3>Company</h3>
-
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="terms.html">Terms of Service</a></li>
                 </ul>
-
             </div>
 
         </div>
 
-
         <div class="footer-bottom">
-
             <p>© 2026 PromptLabs. All rights reserved.</p>
-
-            <span>
-                Built for creators, developers, and AI explorers.
-            </span>
-
+            <span>Built for creators, developers, and AI explorers.</span>
         </div>
 
     </footer>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Sign In | PromptLabs</title>
+    <title>Privacy Policy | PromptLabs</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
 
@@ -35,36 +35,74 @@
 
         <center>
             <h1 id="about_head">
-                Sign <span style="color:#19BDD3;">In</span>
+                Privacy <span style="color:#19BDD3;">Policy</span>
             </h1>
             <p id="about_text">
-                Welcome back! Please sign in to continue.
+                Last updated: April 2026
             </p>
         </center>
 
-        <div class="login-container">
+        <div class="about_section">
 
-            <div class="login-card">
-                <form id="signinForm">
+            <div class="about_card" style="width: 100%;">
+                <h2>Introduction</h2>
+                <p>
+                    PromptLabs ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy
+                    explains how we collect, use, and safeguard your information when you use our website and services.
+                </p>
+            </div>
 
-                    <div class="form-group">
-                        <label class="label">Email ID</label>
-                        <input type="email" id="signinEmail" placeholder="john.doe@example.com">
-                        <span class="error" id="emailError"></span>
-                    </div>
+            <div class="about_card" style="width: 100%;">
+                <h2>Information We Collect</h2>
+                <p>
+                    <strong>Personal Information:</strong> We do not collect or store any personal information on our
+                    servers. All user data is stored locally in your browser's session storage.<br><br>
+                    <strong>Prompt Data:</strong> The prompts you create are processed in real-time and are not stored
+                    by us. They are sent to the Groq API for processing and the response is displayed to you.
+                </p>
+            </div>
 
-                    <div class="form-group">
-                        <label class="label">Password</label>
-                        <input type="password" id="signinPassword" placeholder="Enter your password">
-                        <span class="error" id="passError"></span>
-                    </div>
+            <div class="about_card" style="width: 100%;">
+                <h2>How We Use Information</h2>
+                <p>
+                    The information collected is used solely for the purpose of providing our services:<br><br>
+                    - To generate and enhance your AI prompts<br>
+                    - To provide the "Act As" feature functionality<br>
+                    - To improve user experience on our platform
+                </p>
+            </div>
 
-                    <button type="submit" id="login_btn">Sign In</button>
+            <div class="about_card" style="width: 100%;">
+                <h2>Third-Party Services</h2>
+                <p>
+                    Our website uses the Groq API for AI processing. When you use our prompt generation features, your
+                    input is sent to Groq's servers for processing. We encourage you to review Groq's privacy policy at
+                    <a href="https://groq.com/privacy-policy/" style="color: #19BDD3;" target="_blank">groq.com/privacy-policy</a>.
+                </p>
+            </div>
 
-                </form>
+            <div class="about_card" style="width: 100%;">
+                <h2>Data Security</h2>
+                <p>
+                    We implement appropriate security measures to protect your information. However, please note that no
+                    method of transmission over the internet is 100% secure. We strive to protect your data but cannot
+                    guarantee absolute security.
+                </p>
+            </div>
 
-                <p class="signup_text">
-                    Don't have an account? <a href="signup.html">Sign Up</a>
+            <div class="about_card" style="width: 100%;">
+                <h2>Your Rights</h2>
+                <p>
+                    Since we do not store your data on our servers, your data remains under your control. You can clear
+                    your browser's session storage at any time to remove all locally stored data.
+                </p>
+            </div>
+
+            <div class="about_card" style="width: 100%;">
+                <h2>Contact Us</h2>
+                <p>
+                    If you have any questions about this Privacy Policy, please contact us at:<br><br>
+                    Email: contact@promptlabs.com
                 </p>
             </div>
 
@@ -131,7 +169,7 @@
 
     </footer>
 
-    <script src="auth.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Sign In | PromptLabs</title>
+    <title>Prompt Guide | PromptLabs</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
 
@@ -35,36 +35,81 @@
 
         <center>
             <h1 id="about_head">
-                Sign <span style="color:#19BDD3;">In</span>
+                Prompt <span style="color:#19BDD3;">Engineering Guide</span>
             </h1>
             <p id="about_text">
-                Welcome back! Please sign in to continue.
+                Master the art of prompt engineering with our comprehensive guide.
             </p>
         </center>
 
-        <div class="login-container">
+        <div class="about_section">
 
-            <div class="login-card">
-                <form id="signinForm">
+            <div class="about_card">
+                <h2>What is Prompt Engineering?</h2>
+                <p>
+                    Prompt engineering is the process of designing and optimizing inputs (prompts) to get the best
+                    possible outputs from AI models. It involves understanding how AI interprets instructions and
+                    crafting prompts that produce accurate, relevant, and useful responses.
+                </p>
+            </div>
 
-                    <div class="form-group">
-                        <label class="label">Email ID</label>
-                        <input type="email" id="signinEmail" placeholder="john.doe@example.com">
-                        <span class="error" id="emailError"></span>
-                    </div>
+            <div class="about_card">
+                <h2>Key Principles</h2>
+                <p>
+                    <strong>Clarity:</strong> Be specific and clear about what you want.<br><br>
+                    <strong>Context:</strong> Provide relevant background information.<br><br>
+                    <strong>Constraints:</strong> Define limitations or requirements.<br><br>
+                    <strong>Format:</strong> Specify the desired output format.
+                </p>
+            </div>
 
-                    <div class="form-group">
-                        <label class="label">Password</label>
-                        <input type="password" id="signinPassword" placeholder="Enter your password">
-                        <span class="error" id="passError"></span>
-                    </div>
+            <div class="about_card">
+                <h2>Best Practices</h2>
+                <p>
+                    1. Start with a clear role or persona<br>
+                    2. Define the task explicitly<br>
+                    3. Provide examples when possible<br>
+                    4. Specify the tone and style<br>
+                    5. Include any constraints or requirements<br>
+                    6. Iterate and refine based on results
+                </p>
+            </div>
 
-                    <button type="submit" id="login_btn">Sign In</button>
+            <div class="about_card">
+                <h2>Common Mistakes</h2>
+                <p>
+                    <strong>Too vague:</strong> "Write something about AI"<br><br>
+                    <strong>Too complex:</strong> Overloading with multiple tasks<br><br>
+                    <strong>No context:</strong> Assuming AI knows your situation<br><br>
+                    <strong>Unclear format:</strong> Not specifying output structure
+                </p>
+            </div>
 
-                </form>
+        </div>
 
-                <p class="signup_text">
-                    Don't have an account? <a href="signup.html">Sign Up</a>
+        <br><br>
+
+        <center>
+            <h2 id="team_head" style="font-size: 2rem;">
+                Example <span style="color:#19BDD3;">Prompts</span>
+            </h2>
+        </center>
+
+        <div class="about_section">
+
+            <div class="about_card">
+                <h2>Basic Prompt</h2>
+                <p style="color: #7488a1; font-style: italic;">
+                    "Write a blog post about healthy eating."
+                </p>
+            </div>
+
+            <div class="about_card">
+                <h2>Enhanced Prompt</h2>
+                <p style="color: #7488a1; font-style: italic;">
+                    "Act as a nutritionist. Write a 1000-word blog post about healthy eating habits for busy
+                    professionals. Include 5 practical tips, scientific references, and a motivational conclusion. Use a
+                    friendly and encouraging tone."
                 </p>
             </div>
 
@@ -131,7 +176,7 @@
 
     </footer>
 
-    <script src="auth.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

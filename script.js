@@ -1,5 +1,45 @@
 const API_KEY = "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";
 
+// ============================================================
+// PROFILE DROPDOWN FUNCTIONALITY
+// ============================================================
+
+function toggleProfileDropdown() {
+  const dropdown = document.getElementById("profileDropdown");
+  if (dropdown) {
+    dropdown.classList.toggle("show");
+  }
+}
+
+function logout() {
+  sessionStorage.removeItem("currentUser");
+  alert("You have been logged out successfully!");
+  window.location.href = "landing.html";
+}
+
+// Set profile initial from current user
+function setProfileInitial() {
+  const currentUser = JSON.parse(sessionStorage.getItem("currentUser"));
+  const profileInitial = document.getElementById("profileInitial");
+  if (currentUser && profileInitial) {
+    profileInitial.textContent = currentUser.firstName.charAt(0).toUpperCase();
+  }
+}
+
+// Close dropdown when clicking outside
+window.addEventListener("click", function(e) {
+  const profileDropdown = document.querySelector(".profile-dropdown");
+  const dropdown = document.getElementById("profileDropdown");
+  if (profileDropdown && dropdown) {
+    if (!profileDropdown.contains(e.target)) {
+      dropdown.classList.remove("show");
+    }
+  }
+});
+
+// Run on page load
+setProfileInitial();
+
 // LOGIN PAGE 
 const form = document.getElementById("loginForm");
 

@@ -25,16 +25,26 @@
         <nav>
             <ul class="navbar">
 
-                <a href="index.html" class="navbar-logo" style="margin-right: 70rem;">
+                <a href="index.html" class="navbar-logo" style="margin-right: 55rem;">
                     <img src="assets/logo.png" alt="Logo" class="logo-img">
                 </a>
 
-                <li><a href="index.html" > Home</a></li>
+                <li><a href="index.html"> Home</a></li>
                 <li><a href="generator.html"> Generator</a></li>
                 <li><a href="actas.html"> Act as</a></li>
                 <li><a href="template.html"> Templates</a></li>
                 <li><a href="about.html" style="background-color: #163642; color:#2997a5;"> About</a></li>
                 <li><a href="contact.html"> Contact</a></li>
+
+                <li class="profile-dropdown">
+                    <div class="profile-icon" onclick="toggleProfileDropdown()">
+                        <img src="assets/profile@3x.png" alt="Profile" class="profile-img">
+                    </div>
+                    <div class="dropdown-menu" id="profileDropdown">
+                        <a href="signin.html" class="dropdown-item"><i class="fas fa-users"></i> Switch Accounts</a>
+                        <a href="#" onclick="logout(); return false;" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
             </ul>
         </nav>
 
@@ -85,7 +95,8 @@
         </div>
 
 
-
+<br>
+<br>
 
         <!-- FOOTER -->
 
@@ -126,11 +137,11 @@
                     <h3>Resources</h3>
 
                     <ul>
-                        <li><a href="error.html">Documentation</a></li>
-                        <li><a href="error.html">Prompt Guide</a></li>
-                        <li><a href="error.html">Blog</a></li>
-                        <li><a href="error.html">Tutorials</a></li>
-                        <li><a href="error.html">API</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="guide.html">Prompt Guide</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tutorial.html">Tutorials</a></li>
+                        <li><a href="api.html">API</a></li>
                     </ul>
 
                 </div>
@@ -143,8 +154,8 @@
                     <ul>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="error.html">Privacy Policy</a></li>
-                        <li><a href="error.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
 
                 </div>
@@ -164,6 +175,7 @@
 
         </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

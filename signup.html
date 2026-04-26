@@ -1,41 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Sign Up | PromptLabs</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
+
 <body>
 
-<div class="container">
-  <h2>Sign Up</h2>
-  <form id="signupForm">
-    <input type="text" id="username" placeholder="Username" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <input type="date" id="dob" required>
+    <div class="main">
 
-    <select id="education">
-      <option value="">Education</option>
-      <option>School</option>
-      <option>College</option>
-      <option>Graduate</option>
-    </select>
+        <!-- NAVBAR -->
+        <nav>
+            <ul class="navbar">
 
-    <input type="text" id="occupation" placeholder="Occupation">
+                <a href="index.html" class="navbar-logo" style="margin-right: 70rem;">
+                    <img src="assets/logo.png" alt="Logo" class="logo-img">
+                </a>
 
-    <select id="aiLevel">
-      <option value="">AI Knowledge</option>
-      <option>Low</option>
-      <option>Mid</option>
-      <option>Expert</option>
-    </select>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="generator.html"> Generator</a></li>
+                <li><a href="actas.html"> Act as</a></li>
+                <li><a href="template.html"> Templates</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+            </ul>
+        </nav>
 
-    <button type="submit">Register</button>
-  </form>
+        <center>
+            <h1 id="about_head">
+                Create <span style="color:#19BDD3;">Account</span>
+            </h1>
+            <p id="about_text">
+                Join PromptLabs and start engineering better AI prompts.
+            </p>
+        </center>
 
-  <p id="message"></p>
-</div>
+        <div class="login-container">
 
-<script src="script.js"></script>
+            <div class="login-card" style="width: 500px;">
+                <form id="signupForm">
+
+                    <div class="form-group" style="display: flex; gap: 1rem;">
+                        <div style="flex: 1;">
+                            <label class="label">First Name</label>
+                            <input type="text" id="firstName" placeholder="John">
+                        </div>
+                        <div style="flex: 1;">
+                            <label class="label">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Email ID</label>
+                        <input type="email" id="email" placeholder="john.doe@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Password</label>
+                        <input type="password" id="password" placeholder="Create a strong password">
+                        <span class="error" id="passError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+                        <span class="error" id="confirmError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Date of Birth</label>
+                        <input type="date" id="dob">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Occupation</label>
+                        <input type="text" id="occupation" placeholder="e.g. Student, Developer, Designer">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Experience with AI</label>
+                        <select id="aiExperience" style="width: 100%; padding: 12px; background: #0b0f1a; border: 1px solid #1b2334; border-radius: 0.75rem; color: white;">
+                            <option value="">Select experience level</option>
+                            <option value="High">High</option>
+                            <option value="Low">Low</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="login_btn">Sign Up</button>
+
+                </form>
+
+                <p class="signup_text">
+                    Already have an account? <a href="signin.html">Sign In</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col brand">
+                <h2 class="logo">PromptLabs</h2>
+                <p class="tagline">Turn ideas into powerful AI prompts.</p>
+                <p class="desc">
+                    Transform simple thoughts into optimized AI prompts for modern AI tools.
+                </p>
+
+                <div class="socials">
+                    <a href="https://github.com/Pashvinder/Prompt-Labs.git"><i class="fab fa-github"></i></a>
+                    <a href="error.html"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/pashvinder/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="generator.html">Prompt Generator</a></li>
+                    <li><a href="template.html">Prompt Templates</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="guide.html">Prompt Guide</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="tutorial.html">Tutorials</a></li>
+                    <li><a href="api.html">API</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 PromptLabs. All rights reserved.</p>
+            <span>Built for creators, developers, and AI explorers.</span>
+        </div>
+
+    </footer>
+
+    <script src="auth.js"></script>
 </body>
+
 </html>
