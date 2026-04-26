@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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";
 
 // LOGIN PAGE 
 const form = document.getElementById("loginForm");
@@ -331,4 +331,60 @@ function copyActOutput() {
   setTimeout(function () {
     actCopyBtn.textContent = "Copy";
   }, 2000);
+}
+
+
+
+
+
+
+
+
+let users = JSON.parse(sessionStorage.getItem("users")) || [];
+
+// SIGN UP
+let signupForm = document.getElementById("signupForm");
+if (signupForm) {
+  signupForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let username = document.getElementById("username").value.trim();
+    let password = document.getElementById("password").value.trim();
+    let dob = document.getElementById("dob").value;
+    let education = document.getElementById("education").value;
+    let occupation = document.getElementById("occupation").value.trim();
+    let aiLevel = document.getElementById("aiLevel").value;
+
+    if (!username || !password || !dob || !education || !aiLevel) {
+      document.getElementById("message").innerText = "Fill all required fields";
+      return;
+    }
+
+    let user = { username, password, dob, education, occupation, aiLevel };
+    users.push(user);
+
+    sessionStorage.setItem("users", JSON.stringify(users));
+
+    document.getElementById("message").innerText = "Signup successful!";
+    signupForm.reset();
+  });
+}
+
+// SIGN IN
+let signinForm = document.getElementById("signinForm");
+if (signinForm) {
+  signinForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let username = document.getElementById("loginUser").value.trim();
+    let password = document.getElementById("loginPass").value.trim();
+
+    let found = users.find(u => u.username === username && u.password === password);
+
+    if (found) {
+      document.getElementById("loginMessage").innerText = "Login successful!";
+    } else {
+      document.getElementById("loginMessage").innerText = "Invalid credentials";
+    }
+  });
 }

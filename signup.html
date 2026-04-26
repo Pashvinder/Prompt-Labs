@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Sign Up</h2>
+  <form id="signupForm">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="date" id="dob" required>
+
+    <select id="education">
+      <option value="">Education</option>
+      <option>School</option>
+      <option>College</option>
+      <option>Graduate</option>
+    </select>
+
+    <input type="text" id="occupation" placeholder="Occupation">
+
+    <select id="aiLevel">
+      <option value="">AI Knowledge</option>
+      <option>Low</option>
+      <option>Mid</option>
+      <option>Expert</option>
+    </select>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
