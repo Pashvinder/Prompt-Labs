@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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";
 
 // ============================================================
 // PROFILE DROPDOWN FUNCTIONALITY
@@ -40,7 +40,7 @@ window.addEventListener("click", function(e) {
 // Run on page load
 setProfileInitial();
 
-// LOGIN PAGE 
+// LOGIN PAGE``````` 
 const form = document.getElementById("loginForm");
 
 if (form) {
