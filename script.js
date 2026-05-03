@@ -1,8 +1,6 @@
 const API_KEY = "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";
 
-// ============================================================
-// PROFILE DROPDOWN FUNCTIONALITY
-// ============================================================
+
 
 function toggleProfileDropdown() {
   const dropdown = document.getElementById("profileDropdown");
@@ -93,13 +91,13 @@ if (generateBtn) {
     // Stop if input is empty
     if (!promptIdea.trim()) {
       outputBox.style.color = "#ff4757";
-      outputBox.innerText = "⚠️ Please enter a prompt idea first!";
+      outputBox.innerText = "Please enter a prompt idea first!";
       return;
     }
 
     // Show loading
     outputBox.style.color = "#5C6C85";
-    outputBox.innerText = "✨ Enhancing your prompt...";
+    outputBox.innerText = "Enhancing your prompt...";
 
     try {
       const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
@@ -265,7 +263,7 @@ if (actBtn) {
     const loadingBadge = document.createElement("span");
 
     // Add text to it using textContent
-    loadingBadge.textContent = " ⏳";
+    loadingBadge.textContent = "Getting your prompt ready...";
 
     // Give it an id using setAttribute so we can find it later
     loadingBadge.setAttribute("id", "actLoadingBadge");
@@ -437,6 +435,8 @@ if (signinForm) {
 
     if (found) {
       document.getElementById("loginMessage").innerText = "Login successful!";
+      setTimeout(()=>
+      window.location.href= "index.html",1500)
     } else {
       document.getElementById("loginMessage").innerText = "Invalid credentials";
     }
